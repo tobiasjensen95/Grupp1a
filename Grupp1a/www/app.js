@@ -6,3 +6,17 @@ var app = angular.module("myApp", [
   'ngTouch',
   'ui.bootstrap'
 ]);
+
+
+app.config(["$locationProvider","$routeProvider", function($locationProvider,$routeProvider){
+
+  $routeProvider
+  .when("/", {
+    templateUrl: "/templates/home.html"
+  })
+  .otherwise({
+    templateUrl: "/templates/404.html"
+  });
+
+  $locationProvider.html5Mode(true);
+}]);
