@@ -7300,10 +7300,12 @@ button.close {
     display: none !important;
   }
 }
-navbar {
-  text-align: center;
-}
 .formError {
   font-weight: bold;
   color: red;
+}
+navbar .navbar-nav {
+  float: none;
+  display: table;
+  margin: auto;
 }
