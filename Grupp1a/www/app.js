@@ -11,12 +11,24 @@ var app = angular.module("myApp", [
 app.config(["$locationProvider","$routeProvider", function($locationProvider,$routeProvider){
 
   $routeProvider
-  .when("/", {
-    templateUrl: "/templates/home.html"
-  })
-  .otherwise({
-    templateUrl: "/templates/404.html"
-  });
+    .when("/", {
+      templateUrl: "/templates/hem.html"
+    })
+    .when("/köpa", {
+      templateUrl: "/templates/köpa.html"
+    })
+    .when("/sälja", {
+      templateUrl: "/templates/sälja.html"
+    })
+    .when("/kontor", {
+      templateUrl: "/templates/kontor.html"
+    })
+    .when("/kontakt", {
+      templateUrl: "/templates/kontakt.html"
+    })
+    .otherwise({
+      templateUrl: "/templates/404.html"
+    });
 
   $locationProvider.html5Mode(true);
 }]);

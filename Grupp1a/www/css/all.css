@@ -7303,6 +7303,21 @@ button.close {
 navbar {
   text-align: center;
 }
+/* Form
+---------------------------------------------------*/
+#form {
+  background-color: #f5f5f5;
+  width: 400px;
+}
+#send button {
+  background-color: grey;
+  color: #FFFFFF;
+}
+#formInfo {
+  float: right;
+  margin-right: 230px;
+  margin-top: -40px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -7318,8 +7333,22 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 65px;
   background-color: #f5f5f5;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+li img {
+  width: 25px;
 }
 /* Custom page CSS
 -------------------------------------------------- */
