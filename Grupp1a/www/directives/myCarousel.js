@@ -1,8 +1,7 @@
 //directive that loads ui bootstraps carousel
 app.directive('myCarousel', [function (){
 //body
-
-	return {
+	 return {
 		templateUrl: '/directives/myCarousel.html',
 		//template: '<div>hej!</div>'
 		controller: ['$scope',function ($scope){
@@ -14,9 +13,9 @@ app.directive('myCarousel', [function (){
 			var currIndex = 0;
 
 			$scope.addSlide = function() {
-				var newWidth = 600 + slides.length + 1;
+				var newWidth = 1000 + slides.length + 1;
 				slides.push({
-				  image: 'http://lorempixel.com/' + newWidth + '/300',
+				  image: 'http://loremflickr.com/320/240' + newWidth + '/300',
 				  text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
 				  id: currIndex++
 				});
@@ -27,4 +26,4 @@ app.directive('myCarousel', [function (){
 					
 		}]
 	};
-}]);
+ }]); 

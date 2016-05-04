@@ -7300,8 +7300,6 @@ button.close {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-=======
 navbar {
   text-align: center;
 }
@@ -7368,7 +7366,11 @@ body > .container {
 code {
   font-size: 80%;
 }
->>>>>>> ec71bfc021c36caabd641cdebb4a89e90ebaab1e
+/*-----------------------------------------------
+carousel*/
+.myCarousel {
+  margin: 0 auto;
+}
 .formError {
   font-weight: bold;
   color: red;
