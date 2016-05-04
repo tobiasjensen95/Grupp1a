@@ -16,20 +16,22 @@
     <script src="libs/ui-bootstrap-tpls.min.js"></script>
     <!-- our JS -->
     <script src="/app.js"></script>
+    <script src="/main.js"></script>
     <!-- mongresto $resources -->
     <script src="/api/ngresources/app"></script>
 
     <!-- directives -->
     <script src="/directives/myCarousel.js"></script>
     <script src="/directives/navbar.js"></script>
+    <script src="/directives/myFooter.js"></script>
+    <script src="/directives/myForm.js"></script>
     
-
     <!-- all CSS -->
     <link rel="stylesheet" href="css/all.css">
   </head>
   <body>
     <navbar></navbar>
     <div ng-view></div>
-
+    <my-footer></my-footer>
   </body>
 </html>
