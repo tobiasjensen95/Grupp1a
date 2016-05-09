@@ -9,7 +9,6 @@ module.exports = function(mongoose){
     avgift: {type: Number, required: true},
     boarea: {type: Number, required: true},
     tomtarea: {type: Number, required: true},
-    done: {type: Boolean, required: false}
   });
 
   // Return the model
