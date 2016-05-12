@@ -7830,4 +7830,12 @@ navbar .navbar-nav {
   display: table;
   margin: auto;
 }
-
+.formError {
+  font-weight: bold;
+  color: red;
+}
+navbar .navbar-nav {
+  float: none;
+  display: table;
+  margin: auto;
+}
