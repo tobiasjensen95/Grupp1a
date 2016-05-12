@@ -1,0 +1,27 @@
+<!-- full width on xs && sm, half width on md && lg -->
+<div id="form" class="col-xs-24 col-md-12">
+  <!-- my form stuff -->
+  <h3>Vi kontaktar dig!</h3>
+  <p>Fyll i formuläret så hör vi av oss till dig!</p>
+  <form id="createForm">
+    <div class="form-group">
+      <label for="pnummer">Namn</label>
+      <input type="text" class="form-control" id="pnummer" placeholder="Skriv här...">
+    </div>
+
+    <div class="form-group">
+      <label for="antalp">Epost</label>
+      <input type="text" class="form-control" id="antalp" placeholder="Skriv här...">
+    </div>
+
+    <div class="form-group">
+      <label for="lagerhylla">Telefon</label>
+      <input type="text" class="form-control" id="lagerhylla" placeholder="Skriv här...">
+    </div>
+    
+    <div id="send" class="form-group">
+      <button onclick="formMessage()" type="submit" class="btn btn-default">Skicka</button>
+    </div>
+    <i id="formInfo"></i>
+  </form>
+</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
   <head>
-    <title>Dyhr &amp; Rumson</title>
+    <title>Grupp1a</title>
     <meta charset="utf-8">
     <!-- base href for Angular (HTML5 mode) -->
     <base href="/">
@@ -21,20 +21,25 @@
     <script src="/api/ngresources/app"></script>
 
     <!-- directives -->
+    <script src="/directives/myCarousel.js"></script>
     <script src="/directives/navbar.js"></script>
     <script src="/directives/myFooter.js"></script>
     <script src="/directives/myForm.js"></script>
     <script src="/directives/mySlider.js"></script>
-    <script src="/directives/bilderkontor.js"></script>
-    <script src="/directives/searchnavbar.js"></script>
-    <script src="/directives/myContact.js"></script>
     
     <!-- all CSS -->
     <link rel="stylesheet" href="css/all.css">
   </head>
   <body>
     <navbar></navbar>
-    <div ng-view></div>
+        <header>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-1.jpg" alt></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-2.jpg" alt></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-3.jpg" alt></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-4.jpg" alt></div>
+        <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/jeremiah-wilson-5.jpg" alt></div>
+  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
+</header>
     <my-footer></my-footer>
   </body>
 </html>
