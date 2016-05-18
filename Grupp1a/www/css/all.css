@@ -7847,10 +7847,13 @@ navbar .navbar-nav {
 }
 .bottom-align-text ul {
   width: 200px;
+  margin-top: 10px;
 }
 #kontorrubrik {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 600px;
+  margin: 0 auto;
   font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
 }
 .formError {
