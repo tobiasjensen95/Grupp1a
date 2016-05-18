@@ -1,0 +1,98 @@
+<h3>Query form:</h3>
+<!--
+    our form can use a ng-submit or not
+    depending on if $scope.useSubmit is true
+-->
+<form class="form-inline">
+  <fieldset class="form-group">
+    <select ng-model="townSel" class="form-control">
+      <option value="">Stad</option>
+      <option value="Malmö">Malmö</option>
+      <option value="Lund">Lund</option>
+      <option value="Trelleborg">Trelleborg</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="minPriceSel" class="form-control">
+      <option value="">Lägsta pris</option>
+      <option value="0">0 kr</option>
+      <option value="500000">500 000 kr</option>
+      <option value="1000000">1000 000 kr</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="maxPriceSel" class="form-control">
+      <option value="">Högsta pris</option>
+      <option value="100000">100 000 kr</option>
+      <option value="200000">200 000 kr</option>
+      <option value="500000">500 000 kr</option>
+      <option value="1000000">1 000 000 kr</option>
+      <option value="2000000">2 000 000 kr</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="minAreaSel" class="form-control">
+      <option value="">Minsta yta</option>
+      <option value="20">20 m2</option>
+      <option value="50">50 m2</option>
+      <option value="100">100 m2</option>
+      <option value="200">200 m2</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="maxAreaSel" class="form-control">
+      <option value="">Största yta</option>
+      <option value="30">30 m2</option>
+      <option value="50">50 m2</option>
+      <option value="80">80 m2</option>
+      <option value="100">110 m2</option>
+      <option value="150">150 m2</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <button type="button" class="btn btn-info" ng-click="resetQuery()">
+      Reset query
+    </button>
+  </fieldset>
+</form>
+</div>
+<!-- the search results table column -->
+<div class="col-xs-24">
+<h3>Query results ({{results.length}} items)</h3>
+<div class="panel panel-info">
+  <!-- results from search -->
+  <table class="table table-hover">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Town
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Area
+      </th>
+    </tr>
+    <tr ng-repeat="result in results">
+      <td>
+        {{result.name}}
+      </td>
+      <td>
+        {{result.town}}
+      </td>
+      <td>
+        {{result.price}}
+      </td>
+      <td>
+        {{result.area}}
+      </td>
+    </tr>
+  </table>
+</div>
