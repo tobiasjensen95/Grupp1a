@@ -1,37 +1,36 @@
 <!-- full width on xs && sm, half width on md && lg -->
 <div id="myForm" class="col-xs-12 col-md-12">
   <!-- my form stuff -->
-  <h3>Kostnadsfri värdering</h3>
+  <h3 id="vardering">Kostnadsfri värdering</h3>
   <form class="form-inline" id="createForm">
     <div class="form-group" id="group1">
-      <label for="pnummer">Namn</label>
+      <label for="pnummer">Namn</label> <br>
       <input type="text" class="form-control" id="pnummer" placeholder="Skriv här...">
     </div>
 
     <div class="form-group" id="group2">
-      <label for="antalp">Email</label>
+      <label for="antalp">Email</label> <br>
       <input type="text" class="form-control" id="antalp" placeholder="Skriv här...">
     </div> <br>
 
-    <div class="form-group" id="group3">
-      <label for="lagerhylla">Adress</label>
+    <div class="form-group" id="group1">
+      <label for="lagerhylla">Adress</label> <br>
       <input type="text" class="form-control" id="lagerhylla" placeholder="Skriv här...">
     </div>
 
-    <div class="form-group" id="group4">
-      <label for="byggnad">Bostadstyp</label>
+    <div class="form-group" id="group2">
+      <label for="byggnad">Bostadstyp</label> <br>
       <input type="text" class="form-control" id="byggnad" placeholder="Skriv här...">
     </div> <br>
 
-    <div class="form-group" id="group5">
-      <label for="adress">Övrigt</label>
+    <div class="form-group" id="group3">
+      <label for="adress">Övrigt</label> <br>
       <input type="textarea" class="form-control" id="adress" placeholder="Skriv här...">
-    </div>
+    </div> <br>
     
-    <div id="send" class="form-group">
+    <div id="send" class="form-group" >
       <button onclick="formMessage()" type="submit" class="btn btn-default">Skicka</button>
     </div>
-    <i id="formInfo"></i>
   </form>
   
 </div>

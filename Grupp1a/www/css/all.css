@@ -7483,7 +7483,9 @@ navbar {
 #myForm {
   background-color: #f5f5f5;
   width: 800px;
-  height: 300px;
+  height: 400px;
+  margin-left: 180px;
+  margin-bottom: 10px;
 }
 #form {
   background-color: #f5f5f5;
@@ -7494,12 +7496,27 @@ navbar {
 #send button {
   background-color: black;
   color: #FFFFFF;
+  margin-left: 350px;
 }
+#vardering {
+  margin-left: 250px;
+}
+#group1 {
+  margin-left: 175px;
+}
+#group2 {
+  margin-left: 50px;
+}
+#group3 {
+  margin-left: 300px;
+}
+/* sebbes */
 #formInfo {
   float: right;
   margin-right: 230px;
   margin-top: -40px;
 }
+/* sebbes */
 .form-group {
   margin-top: 30px;
 }
@@ -7788,7 +7805,7 @@ huseffekt p {
   transform: translate3d(0, -100%, 0);
 }
 .värderingseffekt a,
-värderingseffekt p {
+.värderingseffekt p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
