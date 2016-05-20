@@ -7856,6 +7856,18 @@ navbar .navbar-nav {
   margin: 0 auto;
   font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
 }
+.kontorContainer {
+  /* .kontorContainer div.img { .. } */
+}
+.kontorContainer div.img {
+  /* .kontorContainer div.img img { .. } */
+}
+.kontorContainer div.img img {
+  height: 180px;
+  width: 190px;
+  margin-top: 20%;
+  margin-left: 15%;
+}
 .formError {
   font-weight: bold;
   color: red;
