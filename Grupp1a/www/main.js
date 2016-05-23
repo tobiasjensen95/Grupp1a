@@ -4,5 +4,6 @@ function formMessage() {
     $('#lagerhylla').val('');
     $('#byggnad').val('');
     $('#adress').val('');
-	document.getElementById("formInfo").innerHTML = ("Skickat!")
+	document.getElementById("formInfo").innerHTML = ("Skickat!");
 }
+
