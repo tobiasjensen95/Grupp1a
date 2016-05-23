@@ -1,4 +1,4 @@
-app.directive('dummydataGen', ['Property', function (Property) {
+/*app.directive('dummydataGen', ['Property', function (Property) {
   
   return {
     // this directive has no template
@@ -40,4 +40,4 @@ app.directive('dummydataGen', ['Property', function (Property) {
       });
     }
   };
-}]);
+}]);*/
