@@ -83,26 +83,22 @@
       <th>
         Area
       </th>
-      <th>
-        Image
-      </th>
     </tr>
     <tr ng-repeat="result in results">
-      <td>
-        {{result.name}}
-      </td>
-      <td>
-        {{result.town}}
-      </td>
-      <td>
-        {{result.price}}
-      </td>
-      <td>
-        {{result.area}}
-      </td>
-      <td>
-        {{result.image}}
-      </td>
+        <td>
+          <a href="/:id">
+            {{result.name}}
+          </a>
+        </td>
+        <td>
+          {{result.town}}
+        </td>
+        <td>
+          {{result.price}}
+        </td>
+        <td>
+          {{result.area}}
+        </td>    
     </tr>
   </table>
 </div>
