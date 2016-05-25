@@ -1,0 +1,20 @@
+<div id="betygsattning">
+    <h4 id="betyg">Betygsätt oss!</h4>
+    <uib-rating
+    ng-model="rate"
+    id="stjarnor" 
+    max="max"
+    read-only="ratingSent"
+    on-hover="hoveringOver(value)"
+    on-leave="overStar = null"
+    titles="['one','two','three']"
+    aria-labelledby="default-rating"
+    ></uib-rating>
+    <p><span id="stjarnorSkugga" class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}% </span></p>
+
+     <pre>Rate: <b>{{rate}}</b> - Betyget är: <i>{{!ratingSent ? 'ej ' : ''}}inskickat</i></pre>
+    
+        <button type="button" class="btn btn-sm btn-danger" ng-click="clearRating()" ng-disabled="isReadonly">Töm betyget</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="sendRating()">Skicka in betyget</button>
+    
+</div>
