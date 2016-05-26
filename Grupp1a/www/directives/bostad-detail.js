@@ -1,5 +1,5 @@
-app.controller("bostadDetail", ["$scope","$routeParams", "Property", function($scope, $routeParams, Property) {
+app.controller("bostadDetail", ["$scope","$routeParams", "Bostad", function($scope, $routeParams, Bostad) {
 
-  $scope.Property = Property.getById({id:$routeParams.id});
+  $scope.bostad = Bostad.getById({id:$routeParams.id});
  
 }]);
