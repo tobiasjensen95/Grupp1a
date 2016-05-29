@@ -6,4 +6,3 @@ function formMessage() {
     $('#adress').val('');
 	document.getElementById("formInfo").innerHTML = ("Skickat!");
 }
-
