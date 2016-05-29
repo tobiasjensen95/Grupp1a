@@ -1,4 +1,4 @@
-<div id="myForm" class="col-xs-12 col-md-12">
+<!-- <div id="myForm" class="col-xs-12 col-md-12">
   
   <h3 id="mote">Mötes förslag</h3>
   <form class="form-inline" id="createForm">
@@ -38,4 +38,10 @@
   	
   </form>
   
-</div>
+</div> -->
+<h3 id="datepickertext">Du är helt ute o cyklar men du kan ju iallafall fylla i ett datum</h3>
+<form ng-submit="submitForm()">
+  <div id="datepicker"class="form-group" >
+    <input type="text" class="form-control dateInputField" ng-model="selectedDate">
+  </div>
+</form>

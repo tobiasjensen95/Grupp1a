@@ -1,7 +1,7 @@
 app.directive('myData', [function(){
 
   return {
-    templateUrl: '/directives/data.html',
+    templateUrl: '/directives/myData.html',
     controller: ['$scope', '$interval',"Property", function($scope, $interval, Property) {
         Property.get(function(data) {
         	if(data <= 0) {

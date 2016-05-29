@@ -1,16 +1,14 @@
 module.exports = function(mongoose){
 
   // Create a new mongoose schema
-  var bostadSchema = mongoose.Schema({
-    adress: {type: String, required: true},
-    typ: {type: String, required: true},
-    rum: {type: Number, required: true},
-    pris: {type: Number, required: true},
-    avgift: {type: Number, required: true},
-    boarea: {type: Number, required: true},
-    tomtarea: {type: Number, required: true},
+  var BostadSchema = mongoose.Schema({
+    name: {type: String, required: true},
+    town: {type: String, required: true},
+    price: {type: Number, required: true},
+    img: {type: String, required: true},
+    area: {type: Number, required: true}
   });
-
+  
   // Return the model
-  return mongoose.model("Bostad", bostadSchema);
+  return mongoose.model("Bostad", BostadSchema);
 };

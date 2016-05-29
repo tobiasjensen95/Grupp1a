@@ -14,7 +14,7 @@
 
      <pre>Rate: <b>{{rate}}</b> - Betyget är: <i>{{!ratingSent ? 'ej ' : ''}}inskickat</i></pre>
     
-        <button type="button" class="btn btn-sm btn-danger" ng-click="clearRating()" ng-disabled="isReadonly">Töm betyget</button>
-        <button type="button" class="btn btn-sm btn-default" ng-click="sendRating()">Skicka in betyget</button>
+        <button type="button" id="saljknapp" class="btn btn-sm btn-danger" ng-click="clearRating()" ng-disabled="isReadonly">Töm betyget</button>
+        <button type="button" id="saljknapp" class="btn btn-sm btn-default" ng-click="sendRating()">Skicka in betyget</button>
     
 </div>

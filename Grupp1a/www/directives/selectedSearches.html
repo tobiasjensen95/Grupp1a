@@ -57,6 +57,16 @@
       <option value="300">300 m2</option>
     </select>
   </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="sorteraSel" class="form-control">
+      <option value="">Sortera</option>
+      <option value="">Pris, lägsta - högsta</option>
+      <option value="">Pris, högsta - lägsta</option>
+      <option value="">Storlek, minsta - största</option>
+      <option value="">Storlek, största - minsta</option>
+    </select>
+  </fieldset>
   <fieldset class="form-group">
     <button type="button" class="btn btn-info" ng-click="resetQuery()">
       Återställ
@@ -78,31 +88,33 @@
         Område
       </th>
       <th>
-        Pris
+        Pris (Sek)
       </th>
       <th>
-        Area
+        Area (Kvm)
       </th>
       <th>
-        Image
+        Bild
       </th>
     </tr>
     <tr ng-repeat="result in results">
-      <td>
-        {{result.name}}
-      </td>
-      <td>
-        {{result.town}}
-      </td>
-      <td>
-        {{result.price}}
-      </td>
-      <td>
-        {{result.area}}
-      </td>
-      <td>
-        {{result.image}}
-      </td>
+        <td>
+          <a ng-href="/bostad/{{bostad._id}}">
+            {{result.name}}
+          </a>
+        </td>
+        <td>
+          {{result.town}}
+        </td>
+        <td>
+          {{result.price}}
+        </td>
+        <td>
+          {{result.area}}
+        </td>
+        <td>
+          {{result.img}}
+        </td>    
     </tr>
   </table>
 </div>
