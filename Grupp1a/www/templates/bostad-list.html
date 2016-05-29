@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-24">
+      <h1>List of species</h1>
+    </div>
+  </div>
+  <div class="row" ng-repeat="property in properties">
+    <div class="col-xs-24">
+      <a ng-href="/bostad/{{property._id}}">
+        <h2>{{property.name}}</h2>
+      </a>
+    </div>
+  </div>
+</div>

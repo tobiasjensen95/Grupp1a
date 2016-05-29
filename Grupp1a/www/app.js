@@ -26,8 +26,13 @@ app.config(["$locationProvider","$routeProvider", function($locationProvider,$ro
     .when("/kontakt", {
       templateUrl: "/templates/kontakt.html"
     })
+    .when("/bostadlist", {
+      templateUrl: "/templates/bostad-list.html",
+      controller: "bostadList"
+    })
     .when("/bostad/:id", {
-      templateUrl: "/templates/bostad-detail.html"
+      templateUrl: "/templates/bostadDetail.html",
+      controller: "bostadDetail"
     })
     .otherwise({
       templateUrl: "/templates/404.html"
