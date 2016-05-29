@@ -93,3 +93,6 @@ app.controller("bostadList", ["$scope", "Property", function($scope, Property) {
   }
   
 }]);
+
+
+

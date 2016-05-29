@@ -6,3 +6,7 @@ function formMessage() {
     $('#adress').val('');
 	document.getElementById("formInfo").innerHTML = ("Skickat!");
 }
+
+function sorterabostader () {
+  properties.name.sort();
+}
