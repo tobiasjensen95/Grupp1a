@@ -51,6 +51,11 @@ app.directive('selectedSearches', [function () {
           modelProperty: "area",
           type: Number,
           operator: "$lte"
+        },
+        sorteraSel: {
+          modelProperty: "area",
+          type: String,
+          operator: "$lte"
         }
       };
 

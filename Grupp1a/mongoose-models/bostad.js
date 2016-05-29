@@ -1,7 +1,7 @@
 module.exports = function(mongoose){
 
   // Create a new mongoose schema
-  var PropertySchema = mongoose.Schema({
+  var BostadSchema = mongoose.Schema({
     name: {type: String, required: true},
     town: {type: String, required: true},
     price: {type: Number, required: true},
@@ -10,5 +10,5 @@ module.exports = function(mongoose){
   });
   
   // Return the model
-  return mongoose.model("Property", PropertySchema);
+  return mongoose.model("Bostad", BostadSchema);
 };
