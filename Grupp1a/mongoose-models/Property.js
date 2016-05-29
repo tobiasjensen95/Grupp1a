@@ -2,10 +2,10 @@ module.exports = function(mongoose){
 
   // Create a new mongoose schema
   var PropertySchema = mongoose.Schema({
+    id: {type: String, required: true},
     name: {type: String, required: true},
     town: {type: String, required: true},
     price: {type: Number, required: true},
-    // image: {type: Image, required: true},
     area: {type: Number, required: true}
   });
   
