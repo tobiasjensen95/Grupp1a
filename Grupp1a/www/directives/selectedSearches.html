@@ -57,6 +57,14 @@
       <option value="300">300 m2</option>
     </select>
   </fieldset>
+
+  <fieldset class="form-group">
+    <select ng-model="orderBy" class="form-control">
+      <option value="">Sortera</option>
+      <option value="price-low-high">Pris, lägst - högst</option>
+      <option value="price-high-low">Pris, högst - lägst</option>
+    </select>
+  </fieldset>
   <fieldset class="form-group">
     <button type="button" class="btn btn-info" ng-click="resetQuery()">
       Återställ
@@ -86,7 +94,7 @@
     </tr>
     <tr ng-repeat="result in results">
         <td>
-          <a href="/bostad/{{bostad._id}}">
+          <a href="/bostad/{{property._id}}">
             {{result.name}}
           </a>
         </td>

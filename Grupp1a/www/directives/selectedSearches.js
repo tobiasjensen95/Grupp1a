@@ -51,11 +51,6 @@ app.directive('selectedSearches', [function () {
           modelProperty: "area",
           type: Number,
           operator: "$lte"
-        },
-        sorteraSel: {
-          modelProperty: "area",
-          type: String,
-          operator: "$lte"
         }
       };
 
@@ -101,6 +96,19 @@ app.directive('selectedSearches', [function () {
         // build and send our query
         $scope.sendQuery();
       });
+
+      $scope.orderByPrice = function (result) {
+          if ($scope.orderBy == 'price-low-high') {
+              return result.price;
+          }
+          if ($scope.orderBy == 'price-high-low') {
+              return -result.price;
+          }
+          else return result.totalPrice.amount;
+      };
+      $scope.orderByPriority = function (result) {
+              return result.priority;
+      };
 
       // reset all form inputs
       $scope.resetQuery = function() {
