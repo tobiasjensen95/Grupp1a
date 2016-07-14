@@ -54,6 +54,7 @@ app.directive('selectedSearches', [function () {
         }
       };
 
+
       // The $scope variables to watch as an array
       var toWatch = [];
       for(var i in options){ toWatch.push(i); }

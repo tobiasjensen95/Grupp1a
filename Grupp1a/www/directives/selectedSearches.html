@@ -57,9 +57,10 @@
       <option value="300">300 m2</option>
     </select>
   </fieldset>
-
-  <button ng-click="order('price')" class="form-control">Sortera efter pris</button>
-         <span class="sortorder" ng-show="predicate === 'price'" ng-class="{reverse:reverse}"></span>
+<!--
+  <button ng-click="order('price')" class="form-control" id="sort">Sortera efter pris</button>
+         <span class="sortorder" ng-show="predicate === 'price'" ng-class="{reverse:reverse}"></span>-->
+  <button onclick="hej()" class="form-control" id="sort">Sortera alfabetiskt</button>
   <fieldset class="form-group">
     <button type="button" class="btn btn-info" ng-click="resetQuery()">
       Återställ
