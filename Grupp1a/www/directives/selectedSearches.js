@@ -97,6 +97,11 @@ app.directive('selectedSearches', [function () {
         // build and send our query
         $scope.sendQuery();
       });
+      
+      //sort queries
+      $scope.sortQuery = function() {
+        alert("sort");
+      };
 
       // reset all form inputs
       $scope.resetQuery = function() {

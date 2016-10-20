@@ -7,6 +7,6 @@ function formMessage() {
 	document.getElementById("formInfo").innerHTML = ("Skickat!");
 }
 
-function sorterabostader () {
-  properties.name.sort();
+function hej() {
+  alert("HEJ");
 }

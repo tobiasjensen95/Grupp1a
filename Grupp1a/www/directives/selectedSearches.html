@@ -60,8 +60,8 @@
 <!--
   <button ng-click="order('price')" class="form-control" id="sort">Sortera efter pris</button>
          <span class="sortorder" ng-show="predicate === 'price'" ng-class="{reverse:reverse}"></span>-->
-  <button onclick="hej()" class="form-control" id="sort">Sortera alfabetiskt</button>
   <fieldset class="form-group">
+    <button type="button" class="btn btn-success" ng-click="sortQuery()">Sortera A-Ö</button>
     <button type="button" class="btn btn-info" ng-click="resetQuery()">
       Återställ
     </button>
@@ -90,7 +90,7 @@
     </tr>
     <tr ng-repeat="result in results">
         <td>
-          <a href="/bostad/{{property._id}}">
+          <a href="/bostad/{{result._id}}">
             {{result.name}}
           </a>
         </td>
