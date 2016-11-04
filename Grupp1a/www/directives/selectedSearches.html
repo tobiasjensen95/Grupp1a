@@ -57,11 +57,8 @@
       <option value="300">300 m2</option>
     </select>
   </fieldset>
-<!--
-  <button ng-click="order('price')" class="form-control" id="sort">Sortera efter pris</button>
-         <span class="sortorder" ng-show="predicate === 'price'" ng-class="{reverse:reverse}"></span>-->
+
   <fieldset class="form-group">
-    <button type="button" class="btn btn-success" ng-click="sortQuery()">Sortera A-Ö</button>
     <button type="button" class="btn btn-info" ng-click="resetQuery()">
       Återställ
     </button>
@@ -75,22 +72,22 @@
   <!-- results from search -->
   <table class="table table-hover">
     <tr>
-      <th>
+      <th ng-click="sortBy = 'name'">
         Adress
       </th>
       <th>
         Område
       </th>
-      <th>
+      <th ng-click="sortBy = 'price'">
         Pris (Sek)
       </th>
       <th>
         Area (Kvm)
       </th>
     </tr>
-    <tr ng-repeat="result in results">
+    <tr ng-repeat="result in results | orderBy: sortBy">
         <td>
-          <a href="/bostad/{{result._id}}">
+          <a href="/bostad/{{result._id}}" id="sortname">
             {{result.name}}
           </a>
         </td>

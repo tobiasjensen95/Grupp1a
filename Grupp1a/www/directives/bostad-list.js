@@ -1,16 +1,16 @@
 app.controller("bostadList", ["$scope", "Property", function($scope, Property) {
  
-  // Get all animals
+  // Get all houses
   $scope.properties = Property.get(createPropertiesIfNone);
   window.properties = $scope.properties;
   
-  // Create some animals if there are none
+  // Create some houses if there are none
   function createPropertiesIfNone(){
     if($scope.properties.length === 0){
       $scope.properties = Property.create([
         {
           "id": "574608f56d6e1f2a25ac2ee8",
-          "name": "Kaffevägen 2",
+          "name": "Kaffevägen 22",
           "town": "Malmö",
           "price": "2,000,000",
           "img": "../img/hus/hus1.jpg",
